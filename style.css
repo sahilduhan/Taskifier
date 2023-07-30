@@ -1,0 +1,128 @@
+/* :root{
+
+} */
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+}
+
+header{
+	background-color: aliceblue;
+	color: black;
+	padding: 20px;
+	text-align: center;
+}
+header h1{
+	margin-bottom: 20px;
+	font-size: 40px;
+}
+
+#inputTaskForm{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#inputTask{
+	width: 25%;
+	/* height: 30px; */
+	margin: 10px;
+	padding: 15px;
+	border-radius: 5px;
+	border: 1px solid black;
+	border-radius: 10px;
+	border: none;
+	/* padding: 10px; */
+}
+
+#newTaskSubmit{
+	width: 7%;
+	/* height: 30px; */
+	padding: 15px;
+	margin: 10px;
+	border-radius: 5px;
+	border: 1px solid black;
+	/* padding: 5px; */
+	background-color: cadetblue;
+	border-radius: 10px;
+	border: none;
+}
+
+main {
+	background-color: beige;
+	height: 100vh;
+}
+
+main h2{
+	text-align: center;
+	margin: 20px;
+	font-size: 30px;
+}
+
+#tasks{
+	margin: 20px;
+	padding: 20px;
+	display: flex;
+	flex-direction: row;
+	/* justify-content: center; */
+	/* align-items: center; */
+	flex-wrap: wrap;
+}
+
+.task{
+	width: 350px;
+	margin: 10px;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	/* border-radius: 5px÷÷; */
+	/* border: 1px solid black; */
+	/* background-color: cadetblue; */
+	color: white;
+}
+.content input {
+	/* margin: 10px; */
+	margin-bottom: 10px;
+	padding: 10px;
+	width: 100%;
+	height: 70px;
+	/* border-radius: 5px; */
+	/* border: 1px solid black; */
+	border-radius: 10px;
+	border: none;
+}
+.actions {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.deleteButton{
+	/* width: 50px; */
+	/* height: 30px; */
+	border-radius: 30px;
+	border: none;
+	padding: 15px;
+	
+	background-color: red;
+	color: white;
+}
+
+.editButton{
+	border-radius: 30px;
+	border: none;
+	padding: 15px;
+	
+	background-color: green;
+	color: white;
+}
