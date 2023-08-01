@@ -2,28 +2,29 @@ const getTaskHtml = (title, id) => {
 	return `
 		<div class="task" id='task_${id}'>
 			<div class="content">
-				<input onfocusout="saveTask('${id}')" id='${id}' type="text" class="text" value='${title}' readonly>
+				<input id='${id}' type="text" class="text" value='${title}' readonly>
 			</div>
 			<div class="actions">
-				<button onclick="editTask('${id}')" class="editButton">Edit</button>
-				<button onclick="deleteTask('task_${id}')"class="deleteButton">Delete</button>
+				<button onclick = "editTask('${id}')" class="editButton">Edit</button>
+				<button onclick = "saveTask('${id}')" class="saveTaskButton">Save</button>
+				<button onclick = "deleteTask('task_${id}')" class="deleteButton">Delete</button>
 			</div>
 		</div>
 	`
 }
 
-const editTask = (id) => {
+const saveTask = (id) =>{
+	const task = document.getElementById(id);
+	task.readOnly = true;
+}
+
+const editTask = (id) =>{
 	const task = document.getElementById(id);
 	task.readOnly = false;
 	task.focus();
 }
 
-const saveTask = (id) => {
-	const task = document.getElementById(id);
-	task.readOnly = true;
-}
-
-const deleteTask = (id) => {
+const deleteTask = (id) =>{
 	const task = document.getElementById(id);
 	task.remove();
 }
